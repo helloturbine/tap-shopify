@@ -9,7 +9,7 @@
       "type": "string"
     },
     "body_html": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "vendor": {
       "type": "string"
@@ -33,7 +33,7 @@
       "type": ["null", "string"]
     },
     "template_suffix": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "status": {
       "type": "string"
@@ -102,7 +102,7 @@
             "type": "boolean"
           },
           "barcode": {
-            "type": "string"
+            "type": ["string", "null"]
           },
           "grams": {
             "type": "integer"
@@ -250,59 +250,6 @@
           "width"
         ]
       }
-    },
-    "image": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "integer"
-        },
-        "product_id": {
-          "type": "integer"
-        },
-        "position": {
-          "type": "integer"
-        },
-        "created_at": {
-          "format": "date-time",
-          "type": ["null", "string"]
-        },
-        "updated_at": {
-          "format": "date-time",
-          "type": ["null", "string"]
-        },
-        "alt": {
-          "type": ["string", "null"]
-        },
-        "width": {
-          "type": "integer"
-        },
-        "height": {
-          "type": "integer"
-        },
-        "src": {
-          "type": "string"
-        },
-        "variant_ids": {
-          "type": "array"
-        },
-        "admin_graphql_api_id": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "admin_graphql_api_id",
-        "alt",
-        "created_at",
-        "height",
-        "id",
-        "position",
-        "product_id",
-        "src",
-        "updated_at",
-        "variant_ids",
-        "width"
-      ]
     }
   },
   "required": [
@@ -311,7 +258,6 @@
     "created_at",
     "handle",
     "id",
-    "image",
     "images",
     "options",
     "product_type",

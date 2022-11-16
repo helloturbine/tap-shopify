@@ -6,7 +6,7 @@
             "type": "integer"
         },
         "email": {
-            "type": "string"
+            "type": ["string", "null"]
         },
         "accepts_marketing": {
             "type": "boolean"
